@@ -11,6 +11,7 @@ function revertir(cadena) {
         cadenaNueva += cadena[i]; // Utiliza += para concatenar los caracteres invertidos
     }
     return cadenaNueva;
+    
 }
 
 export { revertir };
