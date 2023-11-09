@@ -2,7 +2,7 @@ const { ListNode, addTwoNumbers } = require('../agregarDosNumeros.js');
 
 // Importa la clase y la función de tu código principal
 // Define tus pruebas utilizando una biblioteca de pruebas como Jest
-test('Prueba de suma de listas enlazadas', () => {
+test('Prueba de suma de listas enlazadas Creado por Angel Dabnee', () => {
     // Crea las listas enlazadas para los números 243 y 465
     const l1 = new ListNode(3);
     l1.next = new ListNode(4);
