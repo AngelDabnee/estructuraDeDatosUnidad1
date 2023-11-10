@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "pilaDePlatos":"node pilaDePlatos.js"
     
   },
   "author": "",
