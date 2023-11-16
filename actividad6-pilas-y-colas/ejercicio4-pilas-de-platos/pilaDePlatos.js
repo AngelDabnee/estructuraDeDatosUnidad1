@@ -22,7 +22,7 @@ class Strack{
 
 module.exports = Strack;
 
-const stack = new Strack();
+/*const stack = new Strack();
 console.log(stack.size());
 console.log(stack.push('Angel'));
 console.log(stack.push('Ivan'));
@@ -33,4 +33,4 @@ stack.print()
 
 console.log(stack.peek());
 console.log(stack.pop());
-console.log(stack.peek());
+console.log(stack.peek());*/
