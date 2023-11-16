@@ -22,3 +22,14 @@ test('Agregar elementos a la lista enlazada, probaremos segundo ejemplo', () => 
     expect(linkedList.head.next.next.val).toBe(8); 
     expect(linkedList.head.next.next.next).toBeNull(); 
   });
+  test('Probaremos con char y numeros ', () => {
+    const linkedList = new LinkedList();
+    linkedList.append('a');
+    linkedList.append(4);
+    linkedList.append('c');
+  
+    expect(linkedList.head.val).toBe('a'); 
+    expect(linkedList.head.next.val).toBe(4); 
+    expect(linkedList.head.next.next.val).toBe('c'); 
+    expect(linkedList.head.next.next.next).toBeNull(); 
+  });
