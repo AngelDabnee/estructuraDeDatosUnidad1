@@ -12,4 +12,8 @@ describe('Creado por Angel Dabnee', function() {
     it('debe comprobar si 2 / 2 es igual a 1', function() {
         assert.equal(2 / 2, 1);
     });
+    test('debería estar vacía al principio', () => {
+        const lista = ListaDobleEnlazada();
+        expect(lista.estaVacia()).toBe(true);
+    });
 });

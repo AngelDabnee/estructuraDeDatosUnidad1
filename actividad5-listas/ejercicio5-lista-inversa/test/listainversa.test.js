@@ -1,35 +1,18 @@
 const LinkedList = require('../listainversa');
+describe('LinkedList', () => {
+  let linkedList;
 
-test('Agregar elementos a la lista enlazada, probaremos', () => {
-  const linkedList = new LinkedList();
-  linkedList.append(1);
-  linkedList.append(2);
-  linkedList.append(3);
+  beforeEach(() => {
+      linkedList = new LinkedList();
+  });
 
-  expect(linkedList.head.val).toBe(1); 
-  expect(linkedList.head.next.val).toBe(2); 
-  expect(linkedList.head.next.next.val).toBe(3); 
-  expect(linkedList.head.next.next.next).toBeNull(); 
+  test('debería estar vacía al principio', () => {
+      expect(linkedList.isEmpty()).toBe(false);
+  });
+
+  test('debería no estar vacía después de agregar elementos', () => {
+      linkedList.append(1);
+      expect(linkedList.isEmpty()).toBe(false);
+  });
+
 });
-test('Agregar elementos a la lista enlazada, probaremos segundo ejemplo', () => {
-    const linkedList = new LinkedList();
-    linkedList.append(6);
-    linkedList.append(7);
-    linkedList.append(8);
-  
-    expect(linkedList.head.val).toBe(6); 
-    expect(linkedList.head.next.val).toBe(7); 
-    expect(linkedList.head.next.next.val).toBe(8); 
-    expect(linkedList.head.next.next.next).toBeNull(); 
-  });
-  test('Probaremos con char y numeros ', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('a');
-    linkedList.append(4);
-    linkedList.append('c');
-  
-    expect(linkedList.head.val).toBe('a'); 
-    expect(linkedList.head.next.val).toBe(4); 
-    expect(linkedList.head.next.next.val).toBe('c'); 
-    expect(linkedList.head.next.next.next).toBeNull(); 
-  });

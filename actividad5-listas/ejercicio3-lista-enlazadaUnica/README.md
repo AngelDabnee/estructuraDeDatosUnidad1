@@ -5,4 +5,4 @@ Una lista enlazada es una de las estructuras de datos fundamentales, y puede ser
 
 
 
-![Alt text](image.png)
+![Alt text](image-1.png)

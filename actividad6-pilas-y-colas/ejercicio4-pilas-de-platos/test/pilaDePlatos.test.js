@@ -35,6 +35,7 @@ describe('Probaremos un una Pila, en un ejercicio de pila de platos', () => {
   it('Suponiendo que está vacía después añadimos y damos los elementos. ', () => {
     let stack = new Stack();
     stack.peek();
+    stack.print();
     stack.push('plato1');
     stack.push('plato2');
     stack.push('plato3');
@@ -43,6 +44,10 @@ describe('Probaremos un una Pila, en un ejercicio de pila de platos', () => {
     stack.peek();
     stack.print();
     expect(stack.size()).toBe(5);
+  })
+  it('Valoramos que la pila se haya creado y esté vacía con el método isEmpty. ', () => {
+    let stack = new Stack();
+    console.log(stack.isEmpty());
   })
 
 });

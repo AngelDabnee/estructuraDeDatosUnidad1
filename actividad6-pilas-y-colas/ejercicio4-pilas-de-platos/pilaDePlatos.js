@@ -18,6 +18,9 @@ class Strack{
     print(){
         console.log(this.stack);
     }
+    isEmpty() {
+        return this.stack.length === 0;
+    }
 }
 
 module.exports = Strack;

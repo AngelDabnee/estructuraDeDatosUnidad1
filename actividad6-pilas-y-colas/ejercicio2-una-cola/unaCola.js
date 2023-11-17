@@ -16,16 +16,16 @@ class Queue{
         return this.element.shift();
     }
     peek(){
-        if(element.size() === 0){
-            return "La cola esta vacía"
-        }
-        return this.element[0];
+        return this.stack[this.stack.length-1];
     }
     size(){
         return this.stack.length;
     }
     print(){
         console.log(this.stack);
+    }
+    isEmpty() {
+        return this.stack.length === 0;
     }
 }
 module.exports = Queue;

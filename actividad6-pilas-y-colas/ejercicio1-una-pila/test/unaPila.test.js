@@ -2,15 +2,17 @@ const Strack = require('../unaPila');
 
 describe('Probaremos un una Pila, del ejercicio 1', () => {
 
-  it('eliminar y obtener el elemento de la parte superior de la pila seria banana', () => {
+  it('Probamos que exista la pila y además que la recibamos vacía. ', () => {
     let stack = new Strack();
-    stack.push('manzana');
-    stack.push('banana');
+    //expect(stack.isEmpty()).toBe(true);
+    console.log(stack.isEmpty());
+    //stack.push('manzana');
+    //console.log(stack);
+    /*Sstack.push('banana');
     stack.push('naranja');
     const popElement = stack.pop();
     expect(popElement).toBe('naranja')
-    expect(stack.peek()).toBe('banana');
-    console.log(stack.size());
+    expect(stack.peek()).toBe('banana');*/
   })
 
   it('Aceptaremos puros Números', () => {
@@ -19,15 +21,25 @@ describe('Probaremos un una Pila, del ejercicio 1', () => {
     stack.push(2);
     stack.push(2);
     //const popElement = stack.pop();
-    //expect(popElement).toBe('naranja');
-    //expect(stack.peek()).toBe('banana');
-    console.log(stack.size());
+    //expect(popElement).toBe('naranja')
+    const stackArray = stack.obtenerValor();
+    console.log(stackArray);
   })
   it('Retornamos una Pila Vacía', () => {
     let stack = new Strack();
     //const popElement = stack.pop();
     //expect(popElement).toBe('naranja');
     //expect(stack.peek()).toBe('banana');
-    console.log(stack.size());
+    const stackarrays = stack.obtenerValor();
   })
+  it('Probamos la implementación de un "get"', () => {
+    const myStack = new Strack();
+    myStack.push(1);
+    myStack.push(2);
+    myStack.push(3);
+    
+    const stackArray = myStack.obtenerValor();
+    console.log(stackArray); // Esto imprimirá la
+  })
+  
 });

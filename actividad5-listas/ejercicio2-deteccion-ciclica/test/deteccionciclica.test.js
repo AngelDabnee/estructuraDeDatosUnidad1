@@ -1,4 +1,4 @@
-const {Nodo, detectarCiclo} = require('../deteccionciclica');
+const {Nodo, detectarCiclo,estaVacia} = require('../deteccionciclica');
 const assert = require('assert');
 
 //creamos una lista que NO tiene ciclo. 
@@ -24,5 +24,10 @@ describe('Detección de ciclo en lista creado por Angel Dabnee', function () {
         const resultado = detectarCiclo(listaConCiclo);
         assert.strictEqual(resultado, true);
         console.log(listaConCiclo);
+    });
+    it('devaloramos que esté vacía la lista', function () {
+        const listaVacia = new estaVacia();
+        console.log(listaVacia);
+       
     });
 })

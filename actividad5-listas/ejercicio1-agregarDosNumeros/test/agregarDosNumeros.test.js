@@ -19,5 +19,6 @@ test('Prueba de suma de listas enlazadas Creado por Angel Dabnee', () => {
     expect(result.val).toBe(8);
     expect(result.next.val).toBe(0);
     expect(result.next.next.val).toBe(7);
+    
 });
 

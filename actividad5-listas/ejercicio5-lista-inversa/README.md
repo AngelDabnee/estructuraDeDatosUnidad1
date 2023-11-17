@@ -15,4 +15,4 @@ a.reverse();
 console.log(a); // [3, 2, 1]
 
 
-![Alt text](image.png)
+![Alt text](image-1.png)

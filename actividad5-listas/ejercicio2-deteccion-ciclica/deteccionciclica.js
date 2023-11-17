@@ -18,4 +18,7 @@ function detectarCiclo(lista){
     }
     return false; 
 }
-module.exports = {Nodo,detectarCiclo};
+function estaVacia(lista){
+    return lista === null; 
+}
+module.exports = {Nodo,detectarCiclo,estaVacia};

@@ -12,8 +12,8 @@ class ListaDobleEnlazada {
         this.ultimo = null;
     }
 
-    estaVacia() {
-        return this.primero === null;
+    estaVacia(lista) {
+        return lista.primero === null;
     }
 
     agregarAlPrincipio(dato) {
@@ -66,6 +66,9 @@ class ListaDobleEnlazada {
             actual = actual.siguiente;
         }
         console.log('null');
+    }
+    isEmpty(lista){
+        return lista === null; 
     }
 }
 module.exports = ListaDobleEnlazada;

@@ -3,6 +3,11 @@ class ListNode {
         this.val = val;
         this.next = null;
     }
+    isEmpty() {
+      /*console.log(this.stack.length,'isEmpty');
+      console.log(this.stack.length === 0);*/
+      return this.val.length === 0;
+  }
 }
 
 function addTwoNumbers(l1, l2) {
@@ -31,7 +36,10 @@ function addTwoNumbers(l1, l2) {
     if (carry > 0) {
       current.next = new ListNode(carry);
     }
+
   
     return dummy.next;
   }
+
+  
 module.exports = {addTwoNumbers,ListNode};

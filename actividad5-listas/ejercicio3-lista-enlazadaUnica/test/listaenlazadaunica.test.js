@@ -26,4 +26,7 @@ describe('lista enlazada única creado por Angel Dabnee', function () {
         const resultado = false;
         assert.strictEqual(resultado,false);
     });
+    test('debería estar vacía al principio', () => {
+        expect(lista.estaVacia()).toBe(true);
+    });
 })

@@ -23,6 +23,9 @@ class LinkedList {
             current.next = newNode;
         }
     }
+    isEmpty(lista) {
+        return  lista === null;
+    }
 
 }
 

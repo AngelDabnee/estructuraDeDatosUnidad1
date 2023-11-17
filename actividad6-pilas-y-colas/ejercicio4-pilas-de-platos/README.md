@@ -7,3 +7,5 @@ Consiste en imaginarnos que añadimos un plato, más otro más otro, en donde el
 
 
 #![Alt text](image.png)
+#Valoramos la todos los métodos, incluyendo el isEmpty()
+![Alt text](image-1.png)

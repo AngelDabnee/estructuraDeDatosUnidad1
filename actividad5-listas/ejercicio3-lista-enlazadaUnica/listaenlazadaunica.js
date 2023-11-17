@@ -23,5 +23,8 @@ class listaEnlazada{
             actual.next = nuevoValor; 
         }
     }
+    isEmpty(lista){
+        return lista === null; 
+    }
 }
 module.exports = listaEnlazada;

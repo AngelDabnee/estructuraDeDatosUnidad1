@@ -4,6 +4,7 @@ describe('Probaremos un una Pila, del ejercicio 1', () => {
 
   it('eliminar y obtener el elemento de la parte superior de la pila seria angel', () => {
     let stack = new Queue();
+    stack.peek();
     stack.push('Ruben');
     stack.push('Angel');
     stack.push('Master.Cheno');
@@ -23,8 +24,19 @@ describe('Probaremos un una Pila, del ejercicio 1', () => {
     stack.push('Angel');
     console.log(stack.size());
   })
-  it('Verificaremos si la cola está vacía', () => {
+  it('Probamos que la cola venga vacía y se haya creado. ', () => {
     let stack = new Queue();
-    console.log(stack.peek());
+    console.log(stack.isEmpty());
   })
+  it('Probamos que acepte números y además, que isEmpty sea false. ', () => {
+    let stack = new Queue();
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+    stack.push(4);
+    stack.push(5);
+    console.log(stack.isEmpty());
+  })
+  
+
 });

@@ -11,3 +11,7 @@ El método size devuelve la cantidad de elementos en la pila, es decir, la longi
 
 
 ![Alt text](image.png)
+
+
+#Probamos después de crear el método de isEmpty()
+![Alt text](image-1.png)
