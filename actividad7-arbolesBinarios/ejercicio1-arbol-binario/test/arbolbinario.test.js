@@ -1,4 +1,5 @@
 const ArbolBinario = require('../arbolbinario'); 
+const assert = require('chai').assert;
 
 describe('Probaremos que se añadan elementos al arbol binario', () => {
 
@@ -32,4 +33,13 @@ describe('Probaremos que se añadan elementos al arbol binario', () => {
     arbolBinario.insertar('e');
     arbolBinario.insertar('w');
   })
+  it('Probamos que este vacío ', () => {
+    let arbolBinario = new ArbolBinario();
+    assert.isTrue(arbolBinario.estaVacio());
+  })
+  it('Instancia de la clase a probar ', () => {
+    let arbolBinario = new ArbolBinario();
+    assert.isTrue(arbolBinario.estaVacio());
+  })
+
 })

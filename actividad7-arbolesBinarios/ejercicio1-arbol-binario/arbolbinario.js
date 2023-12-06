@@ -57,6 +57,15 @@ class Nodo {
         return this.buscarNodo(nodo.derecha, valor);
         }
     }
+      // Método para verificar si el árbol está vacío
+      estaVacio() {
+        return this.raiz === null;
+     }
+
+  // Método para verificar si es una instancia de ArbolBinario
+      esInstanciaDeArbolBinario(obj) {
+        return obj instanceof ArbolBinario;
+    }
   
   }
   
