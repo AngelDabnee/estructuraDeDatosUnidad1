@@ -1,4 +1,6 @@
 const ArbolBinario = require('../arbolBinarioMetodoEliminar'); 
+const assert = require('chai').assert;
+
 
 describe('Probamos el método para eliminar un nodo del arbol binario', () => {
 
@@ -51,5 +53,9 @@ describe('Probamos el método para eliminar un nodo del arbol binario', () => {
         console.log('Nodo no encontrado');
       }
     const nodoEliminar = arbol.eliminar('x');
+  })
+  it('Instancia de la clase a probar ', () => {
+    let arbolBinario = new ArbolBinario();
+    assert.isTrue(arbolBinario.estaVacio());
   })
 })

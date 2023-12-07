@@ -1,4 +1,6 @@
 const ArbolBinario = require('../arbolBinarioMetodoMover'); 
+const assert = require('chai').assert;
+
 
 describe('Probamos el método para eliminar un nodo del arbol binario', () => {
 
@@ -40,5 +42,9 @@ describe('Probamos el método para eliminar un nodo del arbol binario', () => {
     arbol.mover(9,1);
 
     console.log(arbol);
+  })
+  it('Instancia de la clase a probar ', () => {
+    let arbolBinario = new ArbolBinario();
+    assert.isTrue(arbolBinario.estaVacio());
   })
 })

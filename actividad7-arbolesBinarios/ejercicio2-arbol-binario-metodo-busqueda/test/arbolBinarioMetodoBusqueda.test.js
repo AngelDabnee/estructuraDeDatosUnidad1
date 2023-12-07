@@ -1,4 +1,6 @@
 const ArbolBinario = require('../arbolBinarioMetodoBusqueda'); 
+const assert = require('chai').assert;
+
 
 describe('Probaremos que podamos realizar una busqueda de elementos al arbol binario', () => {
 
@@ -41,7 +43,10 @@ describe('Probaremos que podamos realizar una busqueda de elementos al arbol bin
         console.log('Nodo no encontrado');
       }
   })
-
+  it('Instancia de la clase a probar ', () => {
+    let arbolBinario = new ArbolBinario();
+    assert.isTrue(arbolBinario.estaVacio());
+  })
 
 
 })

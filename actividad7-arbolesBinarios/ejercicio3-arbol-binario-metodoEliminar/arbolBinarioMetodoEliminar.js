@@ -148,7 +148,15 @@ class Nodo {
     }
     return raiz.valor;
   }
+  // Método para verificar si el árbol está vacío
+  estaVacio() {
+    return this.raiz === null;
+  }
   
+  // Método para verificar si es una instancia de ArbolBinario
+  esInstanciaDeArbolBinario(obj) {
+    return obj instanceof ArbolBinario;
+  }  
 }
 
 module.exports = ArbolBinario;
